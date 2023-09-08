@@ -26,6 +26,7 @@ function updateBooksList() {
         const author = document.createElement("p");
         const pages = document.createElement("p");
         const delButton = document.createElement("button");
+        const readCheckbox = document.createElement("checkbox");
         author.innerHTML = `Author: ${myLibrary[i].author}`;
         title.innerHTML = myLibrary[i].title;
         pages.innerHTML =  `Pages: ${myLibrary[i].pages}`;
@@ -37,6 +38,7 @@ function updateBooksList() {
         bookDiv.append(author);
         bookDiv.append(pages);
         bookDiv.append(delButton);
+        bookDiv.append(readCheckbox);
         booksContainer.append(bookDiv);
     }
 }
